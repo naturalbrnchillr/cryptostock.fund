@@ -1,5 +1,5 @@
-dpm-market-making-services
-investment-form
-the-three-service-levels
-compliance
-SmartBlog
+the-three-service-levels -> custom page
+compliance -> custom page
+SmartBlog -> ???
+investment-form -> is a form
+

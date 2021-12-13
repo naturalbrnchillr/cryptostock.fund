@@ -1,4 +1,4 @@
-import DpmMarketingServices from '../components/Pages/generated/PageLayout1/DpmMarketingServices'
+import DpmMarketingServices from '../components/Pages/generated/PageLayout1/DpmMarketMakingServices'
 
 const Page = () => {
   return <DpmMarketingServices />
