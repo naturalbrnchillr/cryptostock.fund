@@ -94,7 +94,6 @@ class Popout extends React.Component {
           <Link href="/"><div className="menu-item">About us</div></Link>
           <Link href="/our-service-commitment"><div className="menu-item">Our service commitment</div></Link>
           <Link href="/secured-tokens"><div className="menu-item">Secured tokens</div></Link>
-          <Link href="/"><div className="menu-item">Secured tokens</div></Link>
           <Dropdown
             label="Services"
             items={[
@@ -103,6 +102,21 @@ class Popout extends React.Component {
               [ 'Label 3', '/url3' ],
             ]}
           />
+          <Link href="/tokenizables"><div className="menu-item">Tokenizables</div></Link>
+          <Link href="/compliance"><div className="menu-item">Compliance</div></Link>
+          <Link href="/service-partners"><div className="menu-item">Service Partners</div></Link>
+          <Link href="/smart-blog"><div className="menu-item">Smart blog</div></Link>
+          <Link href="/smart-blog"><div className="menu-item">Smart blog</div></Link>
+          <Dropdown
+            label="CCS Client Opportunities"
+            items={[
+              [ 'Label 1', '/url1' ],
+              [ 'Label 2', '/url2' ],
+              [ 'Label 3', '/url3' ],
+            ]}
+          />
+          <Link href="/new-page-2"><div className="menu-item">New Accounts</div></Link>
+          <Link href="/careers"><div className="menu-item">Careers</div></Link>
 
           <div style={{ width: '100%', height: '32px' }}></div>
 
