@@ -116,7 +116,6 @@ class Popout extends React.Component {
           <Link href="/compliance"><div className="menu-item">Compliance</div></Link>
           <Link href="/service-partners"><div className="menu-item">Service Partners</div></Link>
           <Link href="/smart-blog"><div className="menu-item">Smart blog</div></Link>
-          <Link href="/smart-blog"><div className="menu-item">Smart blog</div></Link>
           <Dropdown
             label="CCS Client Opportunities"
             items={[
