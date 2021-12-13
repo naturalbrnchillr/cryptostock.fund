@@ -26,26 +26,33 @@ class Dropdown extends React.Component {
 
     return (
       <>
-        <div className="menu-item" onClick={() => this.setState({ open: !open })}>{labelStr}</div>
+        <div className="wrapper">
+          <div className="menu-item" onClick={() => this.setState({ open: !open })}>{labelStr}</div>
 
-        {open && (
-          <>
-            <div className="box">
-              {items.map((item, i) => {
-                const label = item[0]
-                const url = item[1]
+          {open && (
+            <>
+              <div className="box">
+                {items.map((item, i) => {
+                  const label = item[0]
+                  const url = item[1]
 
-                return (
-                  <>
-                    <Link href={url}><div className="menu-item">{label}</div></Link>
-                  </>
-                )
-              })}
-            </div>
-          </>
-        )}
+                  return (
+                    <>
+                      <Link href={url}><div className="menu-item">{label}</div></Link>
+                    </>
+                  )
+                })}
+              </div>
+            </>
+          )}
+
+        </div>
 
         <style jsx>{`
+          .wrapper {
+            padding-bottom: 1.25em;
+          }
+
           .box {
             width: 100%;
             background: #f7f7f7;
@@ -97,9 +104,12 @@ class Popout extends React.Component {
           <Dropdown
             label="Services"
             items={[
-              [ 'Label 1', '/url1' ],
-              [ 'Label 2', '/url2' ],
-              [ 'Label 3', '/url3' ],
+              [ 'The three service levels', '/the-three-service-levels' ],
+              [ 'For corporate clients', '/corporate-account' ],
+              [ 'FOR INSTITUTIONAL, GOVERNMENT AND AGENCY CLIENTS', '/for-corporate-clients' ],
+              [ 'For company clients', '/for-company-clients' ],
+              [ 'For private clients', '/personal-account-1' ],
+              [ 'Careers', '/careers' ],
             ]}
           />
           <Link href="/tokenizables"><div className="menu-item">Tokenizables</div></Link>
@@ -110,9 +120,18 @@ class Popout extends React.Component {
           <Dropdown
             label="CCS Client Opportunities"
             items={[
-              [ 'Label 1', '/url1' ],
-              [ 'Label 2', '/url2' ],
-              [ 'Label 3', '/url3' ],
+              [ 'Tokenize now', '/tokenize-now' ],
+              [ 'Crypto as a stock', '/crypto-as-a-stock' ],
+              [ 'Assesment and underwriting', '/assessment-and-underwriting-services' ],
+              [ 'Trading support', '/brokerage-services' ],
+              [ 'Custodian services', '/custodian-services' ],
+              [ 'Dpm & Market Making', '/dpm-market-making-services' ],
+              [ 'Key account management', '/key-account-management' ],
+              [ 'Optimized trading', '/optimized-trading-platform' ],
+              [ 'The Utility Quotient', '/the-real-deal' ],
+              [ 'Transfer agency services', '/transfer-agency-services' ],
+              [ 'Upcoming blockchain conferences', '/upcoming-blockchain-conferences' ],
+              [ 'Investment form', '/investment-form' ],
             ]}
           />
           <Link href="/new-page-2"><div className="menu-item">New Accounts</div></Link>
