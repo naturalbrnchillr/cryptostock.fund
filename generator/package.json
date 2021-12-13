@@ -1,0 +1,19 @@
+{
+  "name": "scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scraper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "fs": "^0.0.1-security",
+    "html-extractor": "^0.2.2",
+    "image-downloader": "^4.0.3",
+    "node-html-parser": "^5.1.0",
+    "split-html": "^1.1.0"
+  }
+}
